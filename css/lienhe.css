@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+.website{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#main-menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+   gap:30px;
+    align-items: center;
+ 
+    justify-content: space-around;
+   
+   
+}
+#logo{
+    width: 75px;
+    height: auto;
+    display: block;
+}
+#logo-ip{
+    width: 100px;
+    height:100px;
+    display:none;
+   text-align: left;
+}
+#wr{
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px;
+}
+
+   
+
+#main-menu li {
+   display: flex;
+  
+   height: 40px;
+   line-height: 40px;
+  
+
+}
+#main-menu li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+#main-menu a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight:600;
+}
+#toggle{
+    display: none;
+    color: white;
+    text-align: right;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+  
+}
+#search-mt{
+    display: block;
+}
+#search-dt{
+    display: none;
+}
+#search-check {
+    display: none;
+}
+
+#search-check:checked +  {
+
+}
+
+.collaspe input {
+    width: 0;
+    display: inline-block;
+    padding: 0;
+    transition: width 1s ease;
+    border-width: 0;
+}
+
+.collaspe input:focus,
+.collaspe:hover input {
+    width: 200px;
+    padding: 0 8px;
+    border-width: 0.8px;
+}
+
+
+.lienhe{
+    
+    background-image: url(../images/lienhe.png);
+    height: 410px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    padding-right: 40px;
+    width: 100%;
+    align-items: center;
+    margin-top:75px;
+}
+.content-lh{
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+}
+.content-lh h1{
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.content-lh p{
+    color: #fff;
+    
+}
+
+
+.contact-container{
+    max-width: 960px;
+    margin:auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1.5rem ;
+    background: lightgrey;
+    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form-container{
+    padding:20px;
+
+}
+.form-container h3{
+    font-size:25px;
+    font-weight: 600;
+    margin-bottom:1rem;
+    text-transform: uppercase;
+    margin:20px 0;
+}
+
+.contact-form{
+    display:grid;
+    row-gap: 1rem;
+
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    border: none;
+    outline:none;
+ 
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+}
+
+.contact-form textarea{
+    resize: none;
+    height:200px;
+
+}
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background:#6a89cc;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-form .send-button:hover{
+    background: blue;
+    transition: 0.3s all linear;
+
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    background-color:#303030;
+   padding: 40px 0; 
+    
+
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-col{
+    
+
+}
+ul{
+    list-style-type: none;
+    
+}
+
+.footer-col h4{
+    color: lightgrey;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a,p{
+    font-size:18px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    transform: scale(1.1);
+}
+.footer-col ul li a:hover{
+    transform: scale(1.1);
+    color:red;
+}
+.size{
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+@media (max-width:500px) {
+    .contact-container{
+        margin:0 auto;
+        width:90%;
+    }
+}
+@media (max-width:500px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        margin-top:20px;
+        gap:50px;
+    }
+    .map iframe{
+        height:400px;
+    }
+}
+
+@media (max-width:1000px) {
+    .contact-container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}

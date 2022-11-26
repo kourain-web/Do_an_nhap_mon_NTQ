@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+.website{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#main-menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+   gap:30px;
+    align-items: center;
+ 
+    justify-content: space-around;
+   
+   
+}
+#logo{
+    width: 75px;
+    height: auto;
+    display: block;
+}
+#logo-ip{
+    width: 100px;
+    height:100px;
+    display:none;
+   text-align: left;
+}
+#wr{
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px;
+}
+h1{
+    font-size:30px;
+}
+  
+
+#main-menu li {
+   display: flex;
+  
+   height: 40px;
+   line-height: 40px;
+  
+
+}
+#main-menu li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+#main-menu a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight:600;
+}
+#toggle{
+    display: none;
+    color: white;
+    text-align: right;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+  
+}
+#search-mt{
+    display: block;
+}
+#search-dt{
+    display: none;
+}
+#search-check {
+    display: none;
+}
+
+#search-check:checked +  {
+
+}
+
+.collaspe input {
+    width: 0;
+    display: inline-block;
+    padding: 0;
+    transition: width 1s ease;
+    border-width: 0;
+}
+
+.collaspe input:focus,
+.collaspe:hover input {
+    width: 200px;
+    padding: 0 8px;
+    border-width: 0.8px;
+}
+
+
+ .wrapper{
+    background-image: url(../images/gth.png);
+    height: 633px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    overflow: hidden;
+
+    width: 100%;
+    align-items: center;
+ 
+    padding-left: 30px;
+}
+.wrapper-content{
+    font-size: 20px;
+
+    display: flex;
+    font-family: 'Montserrat';
+   
+    text-align: justify;
+  
+    width: 380px;
+}
+.wrapper-content p{
+    color: #fff;
+}
+.about{
+    margin: 30px;
+    height: 850px;
+}
+    
+ .about-img{
+    display: block;
+    margin-top: -100px;
+ }
+ .about-img img{
+    width: calc(100%);
+    height: 320px;
+    object-fit: contain;
+ }
+ .about-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+ }
+ .about-content p{
+    width: 630px;
+    display: flex;
+    text-align: justify;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: black;
+
+ }
+
+ .news-content{
+   
+    display: flex;
+   
+    width: 314px;
+    text-align: justify;
+    line-height: normal;
+    padding-top: 30px;
+ }
+ .news-content a{
+    font-size: 20px;
+    color: black;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-weight: 300;
+ }
+.news-items{
+    display: block;
+}
+.news-items img{
+    width: calc(100%);
+    height: 200px;
+    object-fit: contain;
+}
+.container-gt{
+    margin:0 32px;
+}
+.gt-row{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+.gt-col{
+    padding: 0 14px;
+}
+.bg{
+    background-color:black;
+}
+.footer{
+    background-color:#303030;
+   padding: 40px 0; 
+    
+
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-col{
+    
+
+}
+ul{
+    list-style-type: none;
+    
+}
+
+.footer-col h4{
+    color: lightgrey;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a,p{
+    font-size:18px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    transform: scale(1.1);
+}
+.footer-col ul li a:hover{
+    transform: scale(1.1);
+    color:red;
+}
+.size{
+    font-size: 35px;
+}
+
+
+ 

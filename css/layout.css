@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+.website{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+#main-menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+   gap:30px;
+    align-items: center;
+ 
+    justify-content: space-around;
+    
+   
+   
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+#logo{
+    width: 75px;
+    height: auto;
+    display: block;
+}
+#logo-ip{
+    width: 100px;
+    height:100px;
+    display:none;
+   text-align: left;
+}
+.wr{
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px;
+    
+}
+
+   
+
+#main-menu li {
+   display: flex;
+  
+   height: 40px;
+   line-height: 40px;
+ 
+
+}
+#main-menu li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+#main-menu a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight:600;
+}
+
+
+#toggle{
+    display: none;
+    color: white;
+    text-align: right;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+  
+}
+#search-mt{
+    display: block;
+}
+#search-dt{
+    display: none;
+}
+#search-check {
+    display: none;
+}
+
+#search-check:checked +  {
+
+}
+
+.collaspe input {
+    width: 0;
+    display: inline-block;
+    padding: 0;
+    transition: width 1s ease;
+    border-width: 0;
+}
+
+.collaspe input:focus,
+.collaspe:hover input {
+    width: 200px;
+    padding: 0 8px;
+    border-width: 0.8px;
+}
+.mid-nav{
+    background-color:lightgrey;
+
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+   
+    
+ }
+.mid-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+.container-card{
+    background-color:black;
+    padding-bottom: 50px;
+}
+.card-row{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.card-col{
+    padding: 20px;
+    margin:auto;
+}
+
+.container-sv{
+    padding: 40px 0;
+}
+.sv-row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+ .slider {
+   display: flex;
+   margin-top: 70px;
+ 
+ }
+ .style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+ .carousel-inner{
+    margin-top: -5px;
+    margin-bottom: -5px;
+ }
+ 
+
+ 
+
+.fl{
+    background-color: black;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+ .box{
+    width: 270px;
+    height: 71px;
+    border-radius: 15px;
+    background-color:#5b5b5b;
+    font-size: 17px;
+   text-align: center;
+    line-height: 50px;
+    background: linear-gradient(0deg, black, white,black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+ .box:hover{  
+    border-radius: 30px ;
+    color: black;
+ }
+ .product{
+    display: flex;
+    justify-content: space-around;
+ }
+ .product-list{
+    justify-content: space-between;
+ }
+.product img{
+    height: 131px;
+    width: calc(100%);
+    object-fit: cover;
+}
+
+.detail-car{
+    overflow: hidden;
+   display: relative;
+
+}
+.car-media{
+    position: relative;
+    margin-bottom: 8px;
+}
+.car-info{
+    padding: 7px;
+    background-color: #373c3f;
+    text-align: center;
+    width:352px;
+    border-radius: 5px;
+
+ 
+}
+.car-media img{
+    object-fit: cover;
+    margin-top: 30px;
+    width: 352px;
+    transition: all 1s;
+    transform: scale(80%);
+    border-radius: 5px;
+}
+.car-media:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(100%);
+}
+
+
+.car-info a{
+    
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Montserrat';
+    font-style: italic;
+}
+.car-info a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sv{
+    background-image: url(../images/dichvu.png);
+    height: 633px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    padding-right: 40px;
+    width: 100%;
+    align-items: center;
+  
+}
+.sv-content{
+    display: flex;
+    line-height: 32px;
+    width: 510px;
+    justify-content: flex-end;   
+    flex-direction: column;
+}
+
+.sv-content p{
+    
+    text-align: justify;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600px;
+}
+.sv-content h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.primary-light{
+   
+    font-family: 'Montserrat';
+        font-size:20px;
+        border-radius: 5px;
+        background-color: #999999;
+        color: #101010;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        border: 2px solid #999999;    
+        
+        width:165px;   
+}
+.primary-light:hover{
+    color: #fff;
+    background-color: black;
+}
+
+.bg{
+    background-color:#e7e7e7;
+}
+.pd-icon{
+    display: flex;
+    
+}
+.pd-icon img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    
+}
+.text{
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+
+}
+.list{
+    list-style-type: disc;
+    color: #5c5c5c;
+    text-align: justify;
+    list-style-position: inside;
+}
+.list-list{
+    line-height: 30px;
+   
+}
+.list-list a{
+    color: #5c5c5c;
+    text-decoration:none;
+    text-align:center;
+}
+.footer{
+    background-color:#303030;
+   padding: 40px 0; 
+    
+
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-col{
+    
+
+}
+ul{
+    list-style-type: none;
+    
+}
+
+.footer-col h4{
+    color: lightgrey;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a,p{
+    font-size:18px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    transform: scale(1.1);
+}
+.footer-col ul li a:hover{
+    transform: scale(1.1);
+    color:red;
+}
+.size{
+    font-size: 35px;
+}
+
+.box a{
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
